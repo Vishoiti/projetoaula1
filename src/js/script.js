@@ -43,24 +43,37 @@
 // let exemplo9=null;
 // console.log(exemplo9)
 
-const valor1=10;
-const valor2=20;
+// const valor1=10;
+// const valor2=20;
 
-console.log(valor1 + valor2);
-console.log(valor1 / valor2);
-console.log(valor1 - valor2);
-console.log(valor1 * valor2);
+// console.log(valor1 + valor2);
+// console.log(valor1 / valor2);
+// console.log(valor1 - valor2);
+// console.log(valor1 * valor2);
 
- const valor1=10;
-console.log(valor1 > valor2)
-console.log(valor1 > 10 && valor2 != 20);
-console.log(valor2 < 5 || valor1 > 50)
+// console.log(valor1 > valor2)
+// console.log(valor1 > 10 && valor2 != 20);
+// console.log(valor2 < 5 || valor1 > 50)
 
-// OPERADORES DE COMPARAÇÃO
-console.log(valor1 < valor2)
-console.log(valor1 <= valor2)
-console.log(valor1 >= valor2)
-console.log(valor1 != valor2)
-console.log(valor1 == valor2)
-console.log(valor1 === valor2)
-onsole.log("O valor é:", valor2)
+// // OPERADORES DE COMPARAÇÃO
+// console.log(valor1 < valor2)
+// console.log(valor1 <= valor2)
+// console.log(valor1 >= valor2)
+// console.log(valor1 != valor2)
+// console.log(valor1 == valor2)
+// console.log(valor1 === valor2)
+// onsole.log("O valor é:", valor2)
+
+// exercicio 1:
+
+const p =10;
+const v = 30;
+const PrecoFinal = p-v;
+console.log("O preço final com desconto é:", PrecoFinal)
+
+// exercicio 2:
+
+const login = 1;
+const token = 100;
+const VerificacaoDeSegurança = login === 1  && token >=10;
+console.log("Verificaçao autorizada com sucesso:", VerificacaoDeSegurança);
