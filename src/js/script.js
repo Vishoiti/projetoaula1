@@ -149,26 +149,72 @@
 // for - Estrutura de repetição mais utilizado quando sabemos previamente quantas vezes
 // o código vai ser executado.
 
-//declaração, operação e incremento
-for(let i=1; i<=5;i++){
-    console.log("Numer:",i);
-}
-// for para array   (ESTUDAR FOR E IN NO JAVA SCRIPT, PARA SABER PARTE DE DENIMINAÇÃO DE DADOS E ETC...)
+// //declaração, operação e incremento
+// for(let i=1; i<=5;i++){
+//     console.log("Numer:",i);
+// }
+// // for para array   (ESTUDAR FOR E IN NO JAVA SCRIPT, PARA SABER PARTE DE DENIMINAÇÃO DE DADOS E ETC...)
 
-const linguagens = ["Java", "Python", "C#"];
+// const linguagens = ["Java", "Python", "C#"];
 
-for(let i=0; i < linguagens.length;i++){
-    console.log("Linguagens",i ,"i", linguagens[i]);
-}
+// for(let i=0; i < linguagens.length;i++){
+//     console.log("Linguagens",i ,"i", linguagens[i]);
+// }
 
-const tecnologias =["JS", "HTML", "CSS"]
+// const tecnologias =["JS", "HTML", "CSS"]
 
-for(const tech of tecnologias){
-    console.log("Estudando", tech)
-}
+// for(const tech of tecnologias){
+//     console.log("Estudando", tech)
+// }
 
-const carros ={marca:"Volks", modelo:"Fusca", ano:1980};
+// const carros ={marca:"Volks", modelo:"Fusca", ano:1980};
 
-for(let dados in carros){
-    console.log(dados, ":", carros[dados])
+// for(let dados in carros){
+//     console.log(dados, ":", carros[dados])
+// }
+
+// // while - diferente do for o while não sabemos a quantidade de vezes que o codigo vai executar
+
+// let i=1;
+
+// while(i <=5){
+//     console.log("contagem", i)
+//     i++;
+// }
+
+// // declaração de variável indefinida
+// let numero;
+
+// while(numero !== "0"){
+//  numero = prompt("Digite um numero(ou 0 para sair)")
+//  console.log("eu sei o que você digitou:", numero);
+// }
+// console.log("Fim do Programa")
+
+// do while (Executa ao menos uma vez)
+let contador =10;
+do{
+    console.log("vai executar pelo menos uma vez")
+    contador ++;
+}while(contador <= 5);
+
+//d declaração da variável undefined
+let palpite;
+
+// gerar um numero aleatório entre 1 e 10
+const sorteio =Math.floor(Math.random() * 10) +1;
+
+do{
+    palpite = parseInt(prompt("Digite um numero entre 1 e 10"));
+
+   if(isNaN(palpite)){              // pesquisar sobre esse isNaN e o parseInt
+        alert("saindo do jogo")
+        break;
+    }
+    if(palpite !== sorteio){
+        alert("Você Perdeu R$ 100,00")
+    }
+}while(palpite !== sorteio)
+    if(palpite === sorteio){
+        alert("Parabens, você acertou e ganhou R$ 100,00!")
 }
